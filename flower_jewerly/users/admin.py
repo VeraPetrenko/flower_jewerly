@@ -12,6 +12,7 @@ class UserAdmin(admin.ModelAdmin):
         'username',
         'email',
         'role',
+        'phone',
     )
     list_filter = ('first_name', 'email')
     empty_value_display = '-пусто-'
@@ -21,4 +22,5 @@ class UserAdmin(admin.ModelAdmin):
         'first_name',
         'last_name',
         'role',
+        'phone',
     )

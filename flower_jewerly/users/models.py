@@ -12,6 +12,7 @@ USERS_ROLES = (
 
 
 class User(AbstractUser):
+    """Кастомная модель пользователя."""
     USERNAME_FIELD = 'phone'
     REQUIRED_FIELDS = ['username', 'email', 'password']
     username = models.CharField(
